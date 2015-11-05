@@ -1,0 +1,32 @@
+<div id="website_main_text">
+		<h1>Andy THach</h1>
+		<h3>A Junior Developer</h3>
+	</div>
+	<div class="wrapper wrapper_padding clearfix">
+		<div class="col-1 about homepage_content">
+			<h2>About</h2>
+			<hr>
+			<p>I'm a Developer &amp;. Wisi feugiat, nisl ac, a orci. Id nascetur, lectus sed elementum, dictum rutrum. Sollicitudin interdum ut. Vestibulum vitae.</p>
+			<p>Praesent faucibus. Habitasse fusce a, nullam dignissim eleifend, ipsum in. Ut dolorum leo, placerat tincidunt habitasse. Rhoncus in interdum, sapien natoque integer. Etiam quis magnis. Enim etiam mus. Vestibulum morbi convallis, porttitor nec. Potenti posuere. <a href="#">Ac felis</a>.</p>
+			<p>Sed id suspendisse. Wisi feugiat, nisl ac, a orci. Id nascetur, lectus sed elementum, dictum rutrum. Sollicitudin interdum ut. Vestibulum vitae.</p>
+		</div>
+		<div class="col-2 homepage_content">
+			<h2>Stuff I've written</h2>
+			<hr>
+			<% @posts.each do |post| %>
+			<h3><a href="#"><%= link_to post.title, post %></a></h3>
+			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+			<% end %>
+
+		</div>	
+		<div class="col-3 homepage_content">
+			<h2>Stuff I've built</h2>
+			<hr>
+			<h3><a href="#">Kamarak FC</a></h3>
+			<p class="date">Wednesday Nov 4th</p>
+			<h3><a href="#">Unit Legends</a></h3>
+			<p class="date">Monday Aug 11th</p>
+			<h3><a href="#">Staff Pro</a></h3>
+			<p class="date">Friday Nov 24th</p>
+		</div>
+	</div>
