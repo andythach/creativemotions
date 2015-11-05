@@ -1,0 +1,22 @@
+<div id="website_main_text">
+		<h1>Andy THach</h1>
+		<h3>A Junior Developer</h3>
+	</div>
+
+	<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+		<header>
+			<p class="date"><%= @project.created_at.strftime('%A, %B %d') %></p>
+			<h1><%= @project.title %></h1>
+			<hr>
+		</header>
+
+		<div id="content">
+			<%= markdown @project.description %>
+
+			<div class="button_wrapper">
+				<a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
+			</div>
+			
+		</div>
+
+		<hr>
