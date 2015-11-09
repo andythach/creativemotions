@@ -85,10 +85,6 @@ p, ul, ol {
 	margin: 0 0 1.6em 0;
 }
 
-fa {
-	margin-bottom: 1.1em;
-}
-
 hr {
 	width: 3em;
 	display: block;
@@ -166,6 +162,7 @@ hr {
 		color: $dark;
 		margin-left: 1em;
 		padding-top: .2em;
+		margin-bottom: 1.1em;
 	  }
 	}
 }
