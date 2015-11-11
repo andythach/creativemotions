@@ -5,6 +5,7 @@ $white: #FFFFFF;
 $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #E9E9E9;
+$black: #121212;
 
 * {
 	box-sizing: border-box;
@@ -43,9 +44,13 @@ body {
 	display: none;
 }
 
-.notice, .alert {
+.notice {
 	text-align: center;
 	padding: 1em 0;
+}
+
+.alert {
+	padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -97,25 +102,32 @@ hr {
 #main_navigation {
 		padding: 2.5em 5%;
 		border-bottom: 1px solid $border;
+		background: $black;
 		.name {
 		font-weight:700px;
-		font-size: .8em;
-		letter-spacing: 4px;
+		font-size: .9em;
+		letter-spacing: 6px;
 		text-transform: uppercase;
-		border: 2px solid $border;
-		padding: 1rem;
+		border: 2px solid $white;
+		padding: 1.4rem;
 		text-decoration: none;
-		color: $dark;
+		color: $white;
 		float: left;
+		&:hover {
+			background: $highlight;
+		}
 	}
 		nav {
 		float: right;
 		padding-top: 1.25rem;
 		a {
-			color: $dark;
+			color: $white;
 			text-decoration: none;
 			margin: 0 1rem;
-			font-size: 1rem;
+			font-size: 1.7rem;
+			&:hover {
+				color: $highlight;
+			}
 		}
 	}
 }
@@ -124,7 +136,8 @@ hr {
 	text-align: center;
 	border-bottom: 1px solid $border;
 	padding: 3em 0;
-	font-size: 1rem;
+	font-size: 1.5rem;
+	font-weight: 800;
 	text-transform: uppercase;
 }
 
@@ -135,13 +148,15 @@ hr {
 #website_main_text h1 {
 	text-align: center;
 	font-size: 3em;
+	font-weight: 800;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
 #website_main_text h3 {
 	text-align: center;
-	margin-top: 0px;
-	padding-top: 0px;
+	font-weight: 400;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	}
 
 @import 'welcome';
@@ -153,7 +168,7 @@ hr {
 	border-top: 1px solid $border;
 	.copyright {
 		float: left;
-		font-size: .9em;
+		font-size: 1.3em;
 		margin: 0;
 	}
 	nav {
@@ -180,6 +195,7 @@ hr {
 .pagination {
 	text-align: center;
 	margin: 0 0 3em 0;
+	display: inherit;
 	a, .previous_page, .current, .next_page {
 		padding: .75em 1em;
 		margin: 0 .5em;
@@ -187,7 +203,7 @@ hr {
 		text-decoration: none;
 		background: $white;
 		font-weight: 700;
-		font-size: .7em;
+		font-size: 1.2em;
 		font-style: normal;
 		color: $dark;
 		&:hover {
@@ -225,7 +241,7 @@ input[type="submit"], .button {
 	background: transparent;
 	border: 2px solid $border;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.5em;
 	color: $dark;
 	text-decoration: none;
 	padding: 1em 2em;
@@ -245,6 +261,10 @@ input[type="submit"], .button {
 .button_wrapper {
 	margin: 4em 0 0 0;
 	text-align: center;
+}
+
+label {
+	font-size: 1.25em;
 }
 
 

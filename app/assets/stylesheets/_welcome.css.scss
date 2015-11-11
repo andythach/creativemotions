@@ -14,12 +14,13 @@
 
 .homepage_content {
 	h2 {
-		font-size: 1.1rem;
+		font-size: 1.5rem;
 		text-transform: uppercase;
+		font-weight: 800;
 	}
 	h3 {
-		font-size: 1.35em;
-		font-weight: 400;
+		font-size: 1.85em;
+		font-weight: 600;
 		margin-bottom: .5em;
 	}
 	a {
@@ -36,6 +37,7 @@
 	}
 	p {
 		margin: 0 0 .75em 0;
+		font-size: 1.85rem;
 	}
 }
 .about {

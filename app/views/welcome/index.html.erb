@@ -2,27 +2,29 @@
 		<h1>Andy THach</h1>
 		<h3>A Junior Developer</h3>
 	</div>
-	<div class="wrapper wrapper_padding clearfix">
-		<div class="col-1 about homepage_content">
-			<h2>About</h2>
-			<hr>
-			<p>Howdy and welcome! I am a junior web developer. Web development is not only my career path but also my hobby for many years now, I can spend hours and hours writing code, fixing them and go beyond my abilities. My goal is to become a full stack developer, working from front-end to back-end and onwards. I am actively looking for a respectable corporation that offer training, support and time to grow as respectable developer. When I am not infront of my computer screens, you'll find me on the field playing football or on the road for nice drive.</p>
-		</div>
-		<div class="col-2 homepage_content">
-			<h2>Stuff I've written</h2>
-			<hr>
-			<% @posts.each do |post| %>
-			<h3><a href="#"><%= link_to post.title, post %></a></h3>
-			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-			<% end %>
+	<div class="wrapper wrapper_padding clearfix container">
+		<div class="row">
+			<div class="about homepage_content col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<h2>About</h2>
+				<hr>
+				<p>Howdy and welcome! I am a junior web developer. Web development is not only my career path but also my hobby for many years now, I can spend hours and hours writing code, fixing them and go beyond my abilities. My goal is to become a full stack developer, working from front-end to back-end and onwards. I am actively looking for a respectable corporation that offer training, support and time to grow as respectable developer. When I am not infront of my computer screens, you'll find me on the field playing football or on the road for nice drive.</p>
+			</div>
+			<div class="homepage_content col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<h2>Stuff I've written</h2>
+				<hr>
+				<% @posts.each do |post| %>
+				<h3><a href="#"><%= link_to post.title, post %></a></h3>
+				<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+				<% end %>
 
-		</div>	
-		<div class="col-3 homepage_content">
-			<h2>Stuff I've built</h2>
-			<hr>
-			<% @projects.each do |project| %>
-			<h3><a href="#"><%= link_to project.title, project %></a></h3>
-			<p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
-			<% end %>
+			</div>	
+			<div class="homepage_content col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<h2>Stuff I've built</h2>
+				<hr>
+				<% @projects.each do |project| %>
+				<h3><a href="#"><%= link_to project.title, project %></a></h3>
+				<p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+				<% end %>
+			</div>
 		</div>
 	</div>

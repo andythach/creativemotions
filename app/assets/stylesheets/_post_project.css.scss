@@ -9,6 +9,7 @@
 		margin: 0;
 		font-size: 2em;
 		text-transform: uppercase;
+		font-weight: 600;
 		a {
 			text-decoration: none;
 			color: $dark;
@@ -38,11 +39,32 @@
 		}
 		h1 {
 			margin: 0;
+			font-size: 2.5em;
 		}
 	}
 	hr {
 		margin: 3em auto;
 	}
+}
+
+#content p, li {
+	font-size: 1.7rem;
+}
+
+#content h1 {
+	font-size: 3.5rem;
+}
+
+#content h2 {
+	font-size: 3.0rem;
+}
+
+#content h3 {
+	font-size: 2.5rem;
+}
+
+#content h4 {
+	font-size: 2.0rem;
 }
 
 #share_box {
@@ -53,7 +75,7 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $dark;
-		font-size: .8em;
+		font-size: 1.8em;
 	}
 	i {
 		color: $dark;
