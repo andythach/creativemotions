@@ -1,4 +1,4 @@
-#Planning our application
+#Planning the blog application
 1.	Answer Questions
 a.	What are we building?
 b.	Who are we building it for?
